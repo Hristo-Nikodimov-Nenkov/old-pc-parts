@@ -1,8 +1,8 @@
 import crypto from "crypto";
-import Account from "../models/Account.js";
+import {Account} from "../models/index.js";
 import {passwordConfigs} from "../configs/security.js";
 import {getUserWithIdViewModel} from "../mappers/account.js";
-import {accountServiceErrors, authenticationServiceErrors} from "./errors";
+import {accountServiceErrors, authenticationServiceErrors} from "./errors/index.js";
 
 export const generateSalt = () =>
    new Promise(((resolve, reject) => {

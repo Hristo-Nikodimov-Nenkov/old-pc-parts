@@ -9,7 +9,7 @@ import {
    routes,
    server,
    staticFiles
-} from "./middlewares";
+} from "./middlewares/index.js";
 
 const app = express();
 

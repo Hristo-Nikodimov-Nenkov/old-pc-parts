@@ -1,7 +1,7 @@
 import {cookieConfigs} from "../configs/security.js";
 import {getRequestUserModel} from "../mappers/account.js";
 import {verifyTokenSync} from "../services/security.js";
-import {authenticationServiceErrors} from "../services/errors";
+import {authenticationServiceErrors} from "../services/errors/index.js";
 
 function authenticate(req, res, next) {
    const authenticationCookie =

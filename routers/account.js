@@ -1,9 +1,9 @@
 import {Router} from "express";
 import {isAuthenticated, isNotAuthenticated} from "../middlewares/authentication.js";
 import validateModel from "../middlewares/validateModel.js";
-import {account} from "../validations";
+import {account} from "../validations/index.js";
 
-import {accountController} from "../controllers";
+import {accountController} from "../controllers/index.js";
 
 const router = Router();
 

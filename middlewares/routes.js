@@ -1,9 +1,15 @@
-import { clientIndexFile } from "../configs/application.js";
+import {clientIndexFile} from "../configs/application.js";
 
-import account from "../routers/account.js";
+import {
+   accountRouter,
+   listingRouter,
+   processorRouter
+} from "../routers/index.js";
 
 export default function (app) {
-   app.use("/api/account", account);
+   app.use("/api/account", accountRouter);
+   app.use("/api/listings", listingRouter)
+   app.use("/api/processors", processorRouter);
    //Add routers here.
    app.use("/api/*", (req, res) => {
       const errorMessage = `Endpoint ${req.method.toUpperCase()} ${

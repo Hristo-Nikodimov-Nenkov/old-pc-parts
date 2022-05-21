@@ -12,8 +12,6 @@ export default function () {
                ? "Development"
                : "Production";
          console.log(`${dbEnvStr} database connected.`);
-
-         import("../models/Account.js");
       })
       .catch((err) => console.log(err));
 }

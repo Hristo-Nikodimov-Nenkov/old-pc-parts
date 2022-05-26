@@ -1,5 +1,5 @@
 import {baseUrl, port} from "../configs/application.js";
 
 export default function (app) {
-    app.listen(port, () => console.log(`Server running on port: ${port}. BaseURL: ${baseUrl}.`));
+   app.listen(port, () => console.log(`Application running on url: ${baseUrl}:${port}.`));
 }

@@ -1,6 +1,6 @@
 import {Routes, Route} from "react-router-dom";
 import {Home} from "./components/pages";
-import {Header} from "./components/common";
+import {Footer, Header} from "./components/common";
 import './App.css';
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
       <Routes>
          <Route index element={<Home/>}/>
       </Routes>
+      <Footer/>
    </>
 }
 

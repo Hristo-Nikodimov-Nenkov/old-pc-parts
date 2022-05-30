@@ -1,11 +1,16 @@
 import {Routes, Route} from "react-router-dom";
-import {Home} from "./pages";
+import {Home} from "./components/pages";
+import {Footer, Header} from "./components/common";
 import './App.css';
 
 function App() {
-  return <Routes>
-    <Route index element={<Home/>}/>
-  </Routes>
+   return <>
+      <Header/>
+      <Routes>
+         <Route index element={<Home/>}/>
+      </Routes>
+      <Footer/>
+   </>
 }
 
 export default App;

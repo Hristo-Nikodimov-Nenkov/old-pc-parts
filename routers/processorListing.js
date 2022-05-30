@@ -1,11 +1,9 @@
 import {Router} from "express";
 import {processorListingController} from "../controllers/index.js";
 
-const processorListingRouter = Router({mergeParams: true});
+const router = Router({mergeParams: true});
 
-processorListingRouter.get("/:id?", processorListingController.getListing);
-processorListingRouter.post("/", processorListingController.addListing);
-processorListingRouter.put("/:id", processorListingController.updateListing);
-processorListingRouter.delete("/:id", processorListingController.removeListing);
+router.get("/:id?", processorListingController.getListing);
+router.post("/", processorListingController.createListing);
 
-export default processorListingRouter;
+export default router;

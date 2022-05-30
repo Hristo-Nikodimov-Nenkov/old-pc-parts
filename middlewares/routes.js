@@ -3,13 +3,15 @@ import {clientIndexFile} from "../configs/application.js";
 import {
    accountRouter,
    listingRouter,
-   processorRouter
+   processorRouter,
+   processorListingRouter
 } from "../routers/index.js";
 
 export default function (app) {
    app.use("/api/account", accountRouter);
-   app.use("/api/listings", listingRouter)
+   app.use("/api/listings", listingRouter);
    app.use("/api/processors", processorRouter);
+   app.use("/api/processors/:processorId/listings", processorListingRouter);
    //Add routers here.
    app.use("/api/*", (req, res) => {
       const errorMessage = `Endpoint ${req.method.toUpperCase()} ${

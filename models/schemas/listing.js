@@ -1,6 +1,10 @@
 import mongoose from "mongoose";
 
 const listingSchema = new mongoose.Schema({
+   part:{
+     type: mongoose.Schema.Types.ObjectId,
+      
+   },
    price: {
       type: Number,
       required: true

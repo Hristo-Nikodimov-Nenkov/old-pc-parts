@@ -1,5 +1,12 @@
+import {Navigation} from "../Navigation";
+
 const Header = () => {
-   return <h2>Header</h2>
+   return <header>
+      <div id="header-logo">
+         <img src="" alt="Application Logo"/>
+      </div>
+      <Navigation />
+   </header>
 }
 
 export default Header;

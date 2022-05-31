@@ -1,6 +1,13 @@
 import {generatePath} from "react-router-dom";
 
-const routes = [
+export const homeLink = {
+   url: "/",
+   text: "Home",
+   icon: ""
+}
+
+
+export const routes = [
    {
       path: "/",
       links: [
@@ -18,13 +25,7 @@ const routes = [
    },
    {
       path: "/about",
-      links: [
-         {
-            url: "/",
-            text: "Home",
-            icon: ""
-         }
-      ]
+      links: [homeLink]
    },
    {
       path: "/motherboards/:id",
@@ -64,4 +65,10 @@ export const getRouteLinks = (links, params) => {
    }));
 }
 
-export default routes;
+const routesService = {
+   homeLink,
+   routes,
+   getRouteLinks,
+}
+
+export default routesService;

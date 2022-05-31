@@ -9,10 +9,14 @@ html, body {
 
 body {
    min-height: 100vh;
-   display: flex;
-   flex-direction: column;
 }
 
-.content {
+#root {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+.grow {
    flex-grow: 1;
 }

@@ -12,13 +12,13 @@ export const routes = [
       path: "/",
       links: [
          {
-            url: "/motherboards",
-            text: "Motherboards",
+            url: "/about",
+            text: "About",
             icon: ""
          },
          {
-            url: "/processors",
-            text: "Processors",
+            url: "/parts",
+            text: "Parts",
             icon: ""
          }
       ]

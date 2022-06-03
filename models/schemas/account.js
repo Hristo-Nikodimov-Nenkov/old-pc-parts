@@ -44,7 +44,7 @@ const accountSchema = new mongoose.Schema({
    passwordHash: {
       type: String,
       required: true,
-   },
+   }
 });
 
 export default accountSchema;

@@ -22,6 +22,9 @@ const processorSchema = new mongoose.Schema({
       unique: true,
       trim: true
    },
+   image: {
+      type: String,
+   },
    specifications: mongoose.Schema.Types.Mixed
 })
 

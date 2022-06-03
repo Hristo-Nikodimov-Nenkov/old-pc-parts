@@ -1,0 +1,19 @@
+.nav {
+   display: flex;
+}
+
+.nav-list {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+}
+
+.nav-list-item {
+   margin: .25rem .5rem;
+}
+
+.nav-list-link {
+   text-decoration: none;
+   margin: .1rem .5rem;
+}

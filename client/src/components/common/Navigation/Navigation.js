@@ -1,19 +1,10 @@
 import useCurrentPathLinks from "../../../hooks/useCurrentPathLinks";
-import {Link} from "react-router-dom";
+import {LinksList} from "../LinksList";
 
 const Navigation = () => {
    const navLinks = useCurrentPathLinks();
-   const showLinks = navLinks.length > 0;
 
-   const mappedLinks = navLinks.map(l => <li key={l.url}>
-      <Link to={l.link}>{l.text}</Link>
-   </li>)
-
-   return <nav>
-      {showLinks && <ul>
-         {mappedLinks}
-      </ul>}
-   </nav>
+   return <LinksList links={navLinks}/>
 }
 
 export default Navigation;
